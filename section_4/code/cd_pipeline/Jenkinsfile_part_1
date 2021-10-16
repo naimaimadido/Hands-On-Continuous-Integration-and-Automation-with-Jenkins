@@ -34,7 +34,6 @@ def deploy(environment) {
 	def port = ''
 
 	if ("${environment}" == 'dev') {
-		println ${appImage}
 		containerName = "app_dev"
 		port = "8888"
 	} 
